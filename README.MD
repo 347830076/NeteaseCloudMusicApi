@@ -99,6 +99,21 @@ banner({ type:0 }).then(res=>{
 ![文档](https://raw.githubusercontent.com/Binaryify/NeteaseCloudMusicApi/master/static/docs.png)
 
 
+# 运维发布
+安装 pm2    
+npm i pm2 -g
+
+// 启动服务
+pm2 init
+pm2 start ecosystem.congif.js
+// 重启服务 
+pm2 restart [id]
+
+pm2 list 
+pm2 stop
+pm2 delete
+
+
 ## 功能特性
 1. 登录
 2. 刷新登录
